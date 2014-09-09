@@ -22,3 +22,21 @@ git clone https://github.com/vimishor/watson.git
 cd watson && npm install --production
 node bin/watson --help
 ```
+
+## Usage
+
+Update issues data for freya-beta2 milestone from Launchpad:
+
+```bash
+node bin/watson --project=elementary --milestone=freya-beta2 --plugins=launchpad update
+INFO: Fetching new data ...
+INFO: Stats unchanged for 09.09.2014
+```
+
+Build static website using data from Launchpad and Sourceforge:
+
+```bash
+node bin/watson --project=elementary --milestone=freya-beta2 --plugins=launchpad,sourceforge build
+INFO: Building static website ...
+INFO: Done.
+```
