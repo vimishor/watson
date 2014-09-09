@@ -40,3 +40,7 @@ node bin/watson --project=elementary --milestone=freya-beta2 --plugins=launchpad
 INFO: Building static website ...
 INFO: Done.
 ```
+
+You can view an example of generated static website [here][1].
+
+[1]: http://ro.static.gentle.ro/sandbox/proto_eos-stats/
