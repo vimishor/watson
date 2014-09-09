@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset=utf-8>
+        
+
+    <title>elementaryOS stats</title>
+        
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <script src="//cdn.jsdelivr.net/modernizr/2.8.3/modernizr.min.js"></script>
+  </head>
+  <body>
+    
+    <!-- Header -->
+    <header class="container-fluid">
+        <div class="row">
+           <div class="col-xs-11 col-xs-offset-1"> 
+                <h1>
+                    <img src="//elementaryos.org/img/email/email-logo.png" alt="elementary_logo" id="elementary_logo" width="36" height="36">
+                    elementary stats
+                </h1>                     
+            </div>
+        </div>
+    </header>
+
+    <main class="container-fluid">
+      <div class="row">
+        {{content}}
+      </div>
+    </div>
+    
+    <footer class="col-xs-11 col-xs-offset-1">
+      <hr>
+      <p class="text-muted"><small>Generated on {{build_date}}</small></p>
+    </footer>
+    
+    <script src="//cdn.jsdelivr.net/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//code.highcharts.com/highcharts.js"></script>
+    <script src="//code.highcharts.com/modules/drilldown.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

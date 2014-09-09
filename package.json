@@ -1,0 +1,45 @@
+{
+  "name": "watson",
+  "description": "Prototype of a simple cli tool for generating stats for elementary OS",
+  "homepage": "https://github.com/vimishor/watson",
+  "keywords": [
+    "elementary",
+    "stats"
+  ],
+  "author": "Alexandru G. <alex@gentle.ro>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vimishor/watson.git"
+  },
+  "bugs": "https://github.com/vimishor/watson/issues",
+  "main": "./out/bin/cli.js",
+  "version": "0.1.0",
+  "dependencies": {
+    "commander": "^2.3.0",
+    "ncp": "^0.6.0",
+    "request": "^2.42.0",
+    "taskgroup": "^4.0.5",
+    "watson-plugin-launchpad": "git://github.com/vimishor/watson-plugin-launchpad.git#develop",
+    "watson-plugin-sourceforge": "git://github.com/vimishor/watson-plugin-sourceforge.git#develop"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.7.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf ./out && coffee --no-header -co ./out ./src && cp -r ./src/web ./out",
+    "prepublish": "npm run build",
+    "doc": ""
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "directories": {
+    "lib": "./out/lib"
+  },
+  "bin": {
+    "watson": "./bin/watson"
+  },
+  "private": true
+}
